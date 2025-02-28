@@ -1,0 +1,302 @@
+/*the external cascading stylesheet*/
+/*Author: Dory Gillikin*/
+
+* { box-sizing: border-box;}
+body {
+	 font-family: Verdana, Arial, sans-serif;
+	 background: url('blueVio.jpg');
+	 background-repeat: repeat;
+	 background-size: cover; 
+}
+/* Media--have different CSS for print, screen, 
+	and device (media query or rule)
+	Mobile Style */
+@media only screen and (max-width: 400px){ 
+ body { background-color: #FFFFFF;} 
+}
+/* Tablet Style */
+@media only screen and (max-width: 768px){
+         	nav { order: 1;}
+		   nav ul { flex-wrap: wrap;}
+}
+header, nav, main, footer { display: block;}
+/* Desktop Style */
+@media only screen and (max-width: 1024px) {
+            body { margin: 0; padding: 0;} 
+            #wrapper { width: auto; margin: 0; 
+			color: #AFEEEE; background-size: cover;}
+
+		    h1 { font-size: 200%; }
+			#flex { flex-direction: column;}
+		    nav ul { display: flex;
+                     flex-direction: column;
+				     justify-content: center; 
+			}
+			nav li { padding: 0 0.5em; 
+				     font-size: 1.2em;
+			}			
+}
+		
+ul {
+	position: float-left;
+    margin: 0px;
+    padding: 3em;
+    list-style: none; 
+    text-shadow: 1.3px 1.3px 1.3px black;
+	color: #AFEEEE;
+}
+ul li {		
+      width: 250px;
+      height: 40px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 20px;
+	  border: 2px solid #5F9EA0;
+	  border-radius: 10px;
+	  background-color: #4682B4;
+	  opacity: .9;	  
+}
+ul li a {
+        text-decoration: none;   color: #AFEEEE;     
+}
+nav {  flex: 1;
+}
+main { flex: 7;
+}
+aside { flex: 2; 
+} 
+/*psuedo classes*/
+nav a { text-decoration: none;}
+nav a:link { color: #330000;}
+nav a:visited { color: #003300;}
+nav a:hover { color: #FFFFFF;}	
+	/*Banner(on each page) with linear gradient background-left to right, 
+	text-shadow, box-shadow and border radius*/
+h1  {	
+		font-size: 2em;
+		font-family:Didot, serif;
+		font-style: italic;
+		color: #AFEEEE;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+		border: 2px solid #5F9EA0;
+		border-radius: 20px;
+		padding: .2em;
+        box-shadow: 2px 2px 2px #4682B4;		
+		background-image: linear-gradient(to left, #4682B4, #C71585);
+		background-size: 100%;
+		display: block;			
+		text-shadow: 3px 3px 3px #000080;
+		text-align: center;
+}
+h2	{
+		font-size: 1.8em;
+		font-family:Didot, serif;
+		font-style: italic;
+		color: transparent;
+		float: right;
+		margin-right: 37%;
+		margin-top: .5%;
+
+		padding: 3.5em;
+		border: 2px solid #5F9EA0;
+		border-radius: 20px;  
+        	box-shadow: 2px 2px 2px 2px #4682B4;
+		text-align: center;
+		background: url('xan7.jpg') no-repeat;
+		background-size: 100%; height: 75%;
+
+		background-size: cover; /* Makes the background image fill the element */
+    		background-position: center; /* Centers the image */
+    		background-attachment: scroll; /* Optional: remove if you want the image to stay fixed when scrolling */
+    		 /* Adjust height according to your design */
+		
+}
+h3 {	
+
+	font-size: 1em;
+	font-family: Verdana, sans-serif;
+	padding-right: 5em;
+	color: #AFEEEE;
+	text-shadow: 3px 3px 3px #000080;
+	text-align: right;
+}
+p    {
+	font-size: 1em;
+	font-family: Verdana, sans-serif;
+	padding-right: 5em;
+	color: #AFEEEE;
+	text-shadow: 3px 3px 3px #000080;
+	text-align: right;	
+}
+caption {
+		border-top: 2px solid #C71585;
+		border-bottom: .5px solid #C8B000071585;
+		border-left: 1px solid #C71585;
+		border-right: 1px solid #C71585;
+		border-radius: 10px;
+		padding-left: 1em;
+		padding-top: .5em;
+		padding-bottom: .5em;
+		color: #F08080;
+		font-size: 1em;
+		font-family: Verdana, sans-serif;
+		text-align: left;
+		background: url('fire.gif') repeat;
+}
+table { 
+		margin-left: auto;
+		margin-right: auto;
+        border: 2px solid #8B0000;
+		border-radius: 10px;
+        width: 75%;
+		background-color: #E6E6FA;
+		position: float-center;
+}
+td, th { 
+		 border: 1px solid #800080;
+		 border-radius: 5px;		 
+         padding: 0.3em;
+		 color: #8B0000;
+         font-family: Arial, sans-serif;
+		 text-shadow: .5px .5px .3px black;
+		 text-align: center;
+}
+/*float*/
+aside	{
+		position: float-right;
+		margin-left: auto;
+		margin-right: 3%;
+		margin-top: -45%;
+		z-index: -100;
+}
+#wrapper {  
+        background-size: url('blue.jpg');
+		background: cover;
+} 
+#flex { display: flex;
+        flex-direction: column;
+}
+/*opacity*/
+#caption2 {
+		border: 2px solid #C71585;
+		border-radius: 10px;
+		box-shadow: 2px 2px 2px #4682B4;
+		margin-left: 35%;
+		margin-top: -2%;
+		margin-bottom: 20%;
+		padding-left: 1em;
+		padding-top: .7em;
+		padding-bottom: .7em;
+		width: 39%;
+		color: #C71585;
+		font-size: 1.5em;
+		font-family: Verdana, sans-serif;
+		font-weight: bold;
+		text-align: center;
+		text-shadow: 3px 3px 3px #000080;
+		background: url('cupcakes.jpg') repeat;
+		position: float-right;	
+		opacity: .9;
+}
+/* main-header with float*/
+.main-header {
+		position: float-left;
+		padding-left: 2em;
+		margin-top: 60px;
+ margin-left: 30px;
+}
+.altrow { 
+		background-color: #D8BFD8; 
+}
+/*float*/
+.img    {
+		position: float-left;
+		margin-right: 80%;
+}
+.main   {
+		text-align: center;
+		margin-top: -20%;
+		padding: 3em;
+}
+.main   {
+		text-align: center;
+		margin-top: -20%;
+		padding: 3em;
+}
+/*float with wrapping text*/
+.top  {
+		line-height: 2em;
+		margin-top: -45%;
+		margin-left: 75%;
+		padding: 10px;
+		float: left;
+		position: float-right;
+}
+/*float*/
+.logo {
+		margin-right: 70%;
+		display: inline-block;
+}	
+.footer {
+	  display: inline-block;
+	  background-color: #4682B4;	  
+	  text-align: center;	  		       
+      padding: 1%;
+	  width: 100%; 
+	  margin-right: auto;
+      margin-left: auto;
+	  margin-top: 15%;
+	  border: 1px solid #4169E1;
+      border-radius: 10px;
+	  font-size: 100%;	 
+	  position: float-bottom; 
+	  display: inline;
+}
+/* Add color to the mailto link */
+.footer a {
+    color: #4B0082; /* Set the color of the mailto link */
+    text-decoration: none; /* Remove underline */
+}
+/* Change the color when hovering over the link */
+.footer a:hover {
+    color: #E0B0FF; /* Gold color for hover effect */
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
